@@ -7,39 +7,49 @@
   <title>A Delicious API Project</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="api-style.css">
-  <link rel="stylesheet" href="">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Recipe Search</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          </div>
-        </div>
-      </nav>
+    <div class="wrapper">
+      <h1 class="headerText">"Mix-It-Up" Recipe Search</h1>
+      <p class="headerText">A helpful resource for chefs with artist's block.</p>
+    </div>  
   </header>
 
-  <div>
-    <form>
+  <div class="formStyle">
+    <form id="formInput">
       <p>
         <label for="search">Search: </label>
         <input type="text" class="search">
       </p>
       <button>Submit</button>
     </form>
+    <br>
+    <ul id="resultsList"></ul>
   </div>
 
-  <div class="results"></div>
-  
-  <section>
+  <div class="infoBox">
+    <h2>Why Mix-It-Up?</h2>
+    <br>
+    <p>Cooking and baking is an art. Chefs know this, bakers know this, and like any form or medium of art, there is always a risk of
+      a "block" - a moment in time, or perhaps a mental state where one finds oneself unable to come up with new ideas
+      for their art. Painters, musicians, and of course, chefs all know this from experience. This "Mix-It-Up" web
+      page is here to help! To the left-hand side, chefs struggling to conjure new ideas and recipes can input a 
+      search for different kinds of ingredients and foods, returning ten articles containing interesting recipes 
+      meant to get the gears in your brain turning and help you leap to your next great culinary idea. Simply type 
+      in an ingredient you'd like to work with (e.g., basil, oregano, blueberries, thyme) or even a dish (e.g, spaghetti, 
+      meatloaf, cake, pie) to retrieve ten recipes associated with that ingredient or dish. You can even try different 
+      culinary terms (e.g., fillet, deglaze, baste, bisque) to return recipes that fall into that category. Try it out!
+    </p>
+  </div>
+  <br>
+  <br>
 
-  </section>
-  
   <script type="text/javascript" src="api-project.js"></script>
+  <footer>
+    <div class="footerStyle">
+      <p>&copy;2018 Kyle Resnik</p>
+    </div>
+  </footer>
 </body>
 </html>
